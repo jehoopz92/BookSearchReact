@@ -1,86 +1,88 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: 'PT Serif', serif;
-	line-height: 1.4;
-	color: #fff;
-	background-color: #0c151d;
+  font-family: "PT Serif", serif;
+  line-height: 1.4;
+  color: #fff;
+  background-color: #182628;
 }
 
 a {
-	color: #333;
-	text-decoration: none;
+  color: rgb(231, 231, 231);
+  text-decoration: none;
 }
 
 .gridItems img {
-	width: 100%;
-	overflow: hidden;
+  width: 70%;
+  height: 272.64px;
+  overflow: hidden;
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
 }
 
 .navbar-toggler .navbar-toggler-icon {
-	background-color: white;
+  background-color: white;
 }
 
 @media (max-width: 1198px) {
-	.grid {
-		grid-template-columns: repeat(5, 1fr);
-	}
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media (max-width: 992px) {
-	.grid {
-		grid-template-columns: repeat(4, 1fr);
-	}
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 769px) {
-	.grid {
-		grid-template-columns: repeat(3, 1fr);
-	}
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-	.col-lg-4 {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+  .col-lg-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-	.col-lg-8 {
-		margin-top: 1rem;
-		margin-bottom: 1rem;
-	}
+  .col-lg-8 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 
-	ul .list-group {
-		margin: 0 !important;
-	}
+  ul .list-group {
+    margin: 0 !important;
+  }
 
-	li .list-group-item {
-		margin-top: 0 !important;
-	}
+  li .list-group-item {
+    margin-top: 0 !important;
+  }
 
-	li p {
-		padding: 0 15px;
-	}
+  li p {
+    padding: 0 15px;
+  }
 
-	li img {
-		margin-right: 3rem;
-	}
+  li img {
+    margin-right: 3rem;
+  }
 }
 
 @media (max-width: 576px) {
-	.grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
 }
